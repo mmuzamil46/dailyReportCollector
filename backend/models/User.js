@@ -36,7 +36,7 @@ const userSchema = new Schema(
       minlength: 6, // but we’ll hash before saving
     },
     woreda: {
-      type: Number,
+      type: String,
       trim: true,
     },
     isActive: {

@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import api from '../services/api';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,11 +27,10 @@ function GenerateReport() {
     try {
       const formattedDate = selectedDate.toISOString().split('T')[0]; // YYYY-MM-DD
       const config = {
-        headers: { Authorization: `Bearer ${token}` },
-        responseType: 'blob',
+        responseType: 'blob', // Token is handled by api interceptor
       };
 
-      const response = await axios.get(`http://localhost:1000/api/reports/generate-pdf?date=${formattedDate}`, config);
+      const response = await api.get(`/reports/generate-pdf?date=${formattedDate}`, config);
 
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement('a');

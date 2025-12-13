@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://10.23.76.202:1000/api', // Proxied to http://localhost:3000/api
+  baseURL: process.env.REACT_APP_API_URL || `http://${window.location.hostname}:3000/api`,
 });
 
 api.interceptors.request.use((config) => {
@@ -39,6 +39,7 @@ export const getUserById = (id) => api.get(`/users/${id}`);
 export const updateUser = (id, data) => api.put(`/users/${id}`, data);
 export const deleteUser = (id) => api.delete(`/users/${id}`);
 export const registerUser = (data) => api.post('/users/register', data);
+export const loginUser = (data) => api.post('/users/login', data);
 // Add these lines to your existing api.js file
 export const getPlanSummary = (config = {}) => api.get('/plans/summary', config);
 export const createPlan = (data, config = {}) => api.post('/plans', data, config);

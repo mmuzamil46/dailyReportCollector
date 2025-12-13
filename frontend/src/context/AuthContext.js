@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
-import axios from 'axios';
 import { jwtDecode } from 'jwt-decode';
+import { loginUser, registerUser } from '../services/api';
 
 export const AuthContext = createContext();
 
@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (credentials) => {
     try {
-      const response = await axios.post('http://10.23.76.202:1000/api/users/login', credentials);
+      const response = await loginUser(credentials);
       const { token } = response.data;
       const decoded = jwtDecode(token);
       localStorage.setItem('token', token);
@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (userData) => {
     try {
-      const response = await axios.post('http://10.23.76.202:1000/api/users/register', userData);
+      const response = await registerUser(userData);
       const { token } = response.data;
       const decoded = jwtDecode(token);
       localStorage.setItem('token', token);

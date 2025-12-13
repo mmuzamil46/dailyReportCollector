@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import { AuthContext } from '../context/AuthContext';
+import { registerUser } from '../services/api';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function RegisterUser() {
@@ -39,14 +39,11 @@ function RegisterUser() {
     setError('');
     setLoading(true);
     try {
-      const config = {
-        headers: { Authorization: `Bearer ${token}` },
-      };
       const payload = {
         ...formData,
         woreda: formData.woreda ? Number(formData.woreda) : undefined,
       };
-      await axios.post('http://localhost:1000/api/users/register', payload, config);
+      await registerUser(payload);
       navigate('/users'); // Redirect to users list or dashboard
     } catch (err) {
       console.error('Error registering user:', err);

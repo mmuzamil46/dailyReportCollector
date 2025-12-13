@@ -57,7 +57,11 @@ function PublicDisplay() {
 
   // WebSocket connection
   useEffect(() => {
-    const socket = io('http://localhost:1000', {
+    // Derive socket URL from API URL (remove /api suffix) or fallback to dynamic hostname
+    const socketUrl = process.env.REACT_APP_API_URL 
+      ? process.env.REACT_APP_API_URL.replace(/\/api$/, '') 
+      : `http://${window.location.hostname}:3000`;
+    const socket = io(socketUrl, {
       reconnection: true,
       reconnectionAttempts: Infinity,
       reconnectionDelay: 1000,
