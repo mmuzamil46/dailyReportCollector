@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || `http://${window.location.hostname}:3000/api`,
+  baseURL: process.env.REACT_APP_API_URL || `http://${window.location.hostname}:8080/api`,
 });
 
 api.interceptors.request.use((config) => {
