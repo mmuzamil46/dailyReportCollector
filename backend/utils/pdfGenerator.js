@@ -110,146 +110,118 @@ const toEthiopianDate = (gregorianDate) => {
   }
 };
 
-const getEthiopianDateString = (displayDate) => {
-    let ethiopianDateStr = displayDate + ""; // Default fallback
-    const ethiopianDate = toEthiopianDate(displayDate);
-    
-    if (ethiopianDate) {
-      const ethiopianMonths = [
-        'መስከረም', 'ጥቅምት', 'ኅዳር', 'ታህሳስ', 'ጥር', 'የካቲት', 
-        'መጋቢት', 'ሚያዝያ', 'ግንቦት', 'ሰኔ', 'ሐምሌ', 'ነሐሴ', 'ጳጉሜ'
-      ];
-      const monthName = ethiopianMonths[ethiopianDate.month - 1] || 'ጥቅምት';
-      ethiopianDateStr = `${monthName}/${ethiopianDate.day}/${ethiopianDate.year}`;
-    } else {
-      // Fallback to Gregorian date in Amharic numbers if conversion fails
-      const gregorianDate = displayDate;
-      const day = gregorianDate.getDate();
-      const month = gregorianDate.getMonth() + 1;
-      const year = gregorianDate.getFullYear();
-      
-      // Convert numbers to Amharic
-      const amharicNumbers = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
-      const toAmharicNumber = (num) => {
-        return num.toString().split('').map(digit => amharicNumbers[parseInt(digit)]).join('');
-      };
-      
-      ethiopianDateStr = `${toAmharicNumber(month)}/${toAmharicNumber(day)}/${toAmharicNumber(year)}`;
+const getEthiopianDateString = (displayDate, endDate = null) => {
+    const ethiopianMonths = [
+      'መስከረም', 'ጥቅምት', 'ኅዳር', 'ታህሳስ', 'ጥር', 'የካቲት', 
+      'መጋቢት', 'ሚያዝያ', 'ግንቦት', 'ሰኔ', 'ሐምሌ', 'ነሐሴ', 'ጳጉሜ'
+    ];
+
+    const convertDate = (d) => {
+      const ethiopianDate = toEthiopianDate(d);
+      if (ethiopianDate) {
+        const monthName = ethiopianMonths[ethiopianDate.month - 1] || 'ጥቅምት';
+        return `${monthName} ${ethiopianDate.day} ቀን ${ethiopianDate.year} ዓ.ም`;
+      }
+      return d.toLocaleDateString();
+    };
+
+    const startStr = convertDate(new Date(displayDate));
+    if (endDate) {
+      const endStr = convertDate(new Date(endDate));
+      return `ከ ${startStr} እስከ ${endStr}`;
     }
-    return ethiopianDateStr;
+    return startStr;
 };
 
-const generateReportPDF = (res, reportSummary, totalReports, displayDate, title) => {
-    const doc = new PDFDocument({ 
-      size: 'A4', 
-      margin: 50
-    });
-    
-    // Font handling
-    let amharicFont;
+const generateReportPDF = (res, reportSummary, totalReports, displayDate, title, endDate = null) => {
+  return new Promise((resolve, reject) => {
     try {
-      const fontPath = path.join(__dirname, '../fonts/NotoSansEthiopic-VariableFont_wdth,wght.ttf');
-      amharicFont = fontPath;
-      doc.registerFont('Amharic', fontPath);
-    } catch (fontError) {
-      console.warn('Could not register Amharic font:', fontError.message);
-      amharicFont = 'Helvetica';
-    }
-
-    doc.pipe(res);
-
-    // Use Amharic font if available, otherwise fallback
-    const contentFont = amharicFont !== 'Helvetica' ? 'Amharic' : 'Helvetica';
-
-    const ethiopianDateStr = getEthiopianDateString(displayDate);
-
-    // Header - Main Title
-    doc.font(contentFont).fontSize(18).text(title, { 
-      align: 'center',
-      underline: true
-    });
-    
-    doc.moveDown(0.5);
-
-    // Date header
-    doc.font(contentFont).fontSize(14).text(ethiopianDateStr, { align: 'center' });
-    doc.moveDown(1.5);
-
-    // Check if we have any data
-    if (Object.keys(reportSummary).length === 0) {
-      doc.font(contentFont).fontSize(14).text('ለተመረጠው ቀን ምንም ሪፖርት አልተገኘም።', { align: 'center' });
-      doc.end();
-      return;
-    }
-
-    // Create table with template format
-    const tableTop = doc.y;
-    const colWidths = [200, 150, 100];
-    const rowHeight = 25;
-
-    // Table headers with background
-    doc.rect(50, tableTop, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
-       .fill('#f0f0f0');
-    
-    doc.font(contentFont).fontSize(12).fillColor('#000000');
-    doc.text('የአገልግሎት ስም', 55, tableTop + 8, { width: colWidths[0] - 10 });
-    doc.text('ምድብ', 55 + colWidths[0], tableTop + 8, { width: colWidths[1] - 10 });
-    doc.text('ብዛት', 55 + colWidths[0] + colWidths[1], tableTop + 8, { width: colWidths[2] - 10 });
-
-    // Draw header border
-    doc.rect(50, tableTop, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
-       .stroke();
-    
-    let currentY = tableTop + rowHeight;
-
-    // Table rows
-    Object.keys(reportSummary).forEach(serviceName => {
-      const summary = reportSummary[serviceName];
-      const cats = serviceCategories[serviceName] || [];
+      const doc = new PDFDocument({ 
+        size: 'A4', 
+        margin: 50
+      });
       
-      if (cats.length === 0) {
-        // Services with no categories (like መሸኛ)
-        if (summary.total > 0) {
-          // Row background
-          const isEvenRow = Math.floor((currentY - tableTop) / rowHeight) % 2 === 0;
-          if (isEvenRow) {
-            doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
-               .fill('#fafafa');
-          }
+      // Font handling
+      let amharicFont;
+      const fontPath = path.join(__dirname, '../fonts/NotoSansEthiopic-VariableFont_wdth,wght.ttf');
+      
+      try {
+        doc.registerFont('Amharic', fontPath);
+        amharicFont = 'Amharic';
+      } catch (fontError) {
+        console.warn('Could not register Amharic font:', fontError.message);
+        amharicFont = 'Helvetica';
+      }
 
-          doc.font(contentFont).fontSize(10).fillColor('#000000');
-          doc.text(serviceName, 55, currentY + 8, { width: colWidths[0] - 10 });
-          doc.text('ጠቅላላ', 55 + colWidths[0], currentY + 8, { width: colWidths[1] - 10 });
-          
-          doc.font('Helvetica').text(summary.total.toString(), 55 + colWidths[0] + colWidths[1], currentY + 8, { 
-            width: colWidths[2] - 10,
-            align: 'center'
-          });
-          
-          doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
-             .stroke();
-          
-          currentY += rowHeight;
-        }
-      } else {
-        // Services with categories (like ልደት)
-        let hasData = false;
+      // Error handling for the stream
+      res.on('error', (err) => {
+        console.error('Response stream error:', err);
+        reject(err);
+      });
+
+      doc.pipe(res);
+
+      const contentFont = amharicFont;
+      const ethiopianDateStr = getEthiopianDateString(displayDate, endDate);
+
+      // Header - Main Title
+      doc.font(contentFont).fontSize(16).text(title, { 
+        align: 'center',
+        underline: true
+      });
+      
+      doc.moveDown(0.5);
+
+      // Date header
+      doc.font(contentFont).fontSize(14).text(ethiopianDateStr, { align: 'center' });
+      doc.moveDown(1.5);
+
+      // Check if we have any data
+      if (Object.keys(reportSummary).length === 0) {
+        doc.font(contentFont).fontSize(14).text('ለተመረጠው ቀን ምንም ሪፖርት አልተገኘም።', { align: 'center' });
+        doc.end();
+        resolve();
+        return;
+      }
+
+      // Create table with template format
+      const tableTop = doc.y;
+      const colWidths = [200, 150, 100];
+      const rowHeight = 25;
+
+      // Table headers with background
+      doc.rect(50, tableTop, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
+         .fill('#f0f0f0');
+      
+      doc.font(contentFont).fontSize(12).fillColor('#000000');
+      doc.text('የአገልግሎት ስም', 55, tableTop + 8, { width: colWidths[0] - 10 });
+      doc.text('ምድብ', 55 + colWidths[0], tableTop + 8, { width: colWidths[1] - 10 });
+      doc.text('ብዛት', 55 + colWidths[0] + colWidths[1], tableTop + 8, { width: colWidths[2] - 10 });
+
+      // Draw header border
+      doc.rect(50, tableTop, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
+         .stroke();
+      
+      let currentY = tableTop + rowHeight;
+
+      // Table rows
+      Object.keys(reportSummary).forEach(serviceName => {
+        const summary = reportSummary[serviceName];
+        const cats = serviceCategories[serviceName] || [];
         
-        cats.forEach(cat => {
-          const count = summary.categories[cat] || 0;
-          if (count > 0) {
-            // Row background
+        if (cats.length === 0) {
+          if (summary.total > 0) {
             const isEvenRow = Math.floor((currentY - tableTop) / rowHeight) % 2 === 0;
             if (isEvenRow) {
               doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
                  .fill('#fafafa');
             }
-            
+
             doc.font(contentFont).fontSize(10).fillColor('#000000');
             doc.text(serviceName, 55, currentY + 8, { width: colWidths[0] - 10 });
-            doc.text(cat, 55 + colWidths[0], currentY + 8, { width: colWidths[1] - 10 });
+            doc.text('ጠቅላላ', 55 + colWidths[0], currentY + 8, { width: colWidths[1] - 10 });
             
-            doc.font('Helvetica').text(count.toString(), 55 + colWidths[0] + colWidths[1], currentY + 8, { 
+            doc.font('Helvetica').text(summary.total.toString(), 55 + colWidths[0] + colWidths[1], currentY + 8, { 
               width: colWidths[2] - 10,
               align: 'center'
             });
@@ -258,65 +230,93 @@ const generateReportPDF = (res, reportSummary, totalReports, displayDate, title)
                .stroke();
             
             currentY += rowHeight;
-            hasData = true;
           }
-        });
-        
-        // Add total row for categorized services
-        if (hasData && summary.total > 0) {
-          // Highlight total row
-          doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
-             .fill('#e8f4fd');
-          
-          doc.font(contentFont).fontSize(10).fillColor('#000000');
-          doc.text(serviceName, 55, currentY + 8, { width: colWidths[0] - 10 });
-          doc.text('ጠቅላላ', 55 + colWidths[0], currentY + 8, { width: colWidths[1] - 10 });
-          
-          doc.font('Helvetica-Bold').text(summary.total.toString(), 55 + colWidths[0] + colWidths[1], currentY + 8, { 
-            width: colWidths[2] - 10,
-            align: 'center'
+        } else {
+          let hasData = false;
+          cats.forEach(cat => {
+            const count = summary.categories[cat] || 0;
+            if (count > 0) {
+              const isEvenRow = Math.floor((currentY - tableTop) / rowHeight) % 2 === 0;
+              if (isEvenRow) {
+                doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
+                   .fill('#fafafa');
+              }
+              
+              doc.font(contentFont).fontSize(10).fillColor('#000000');
+              doc.text(serviceName, 55, currentY + 8, { width: colWidths[0] - 10 });
+              doc.text(cat, 55 + colWidths[0], currentY + 8, { width: colWidths[1] - 10 });
+              
+              doc.font('Helvetica').text(count.toString(), 55 + colWidths[0] + colWidths[1], currentY + 8, { 
+                width: colWidths[2] - 10,
+                align: 'center'
+              });
+              
+              doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
+                 .stroke();
+              
+              currentY += rowHeight;
+              hasData = true;
+            }
           });
           
+          if (hasData && summary.total > 0) {
+            doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
+               .fill('#e8f4fd');
+            
+            doc.font(contentFont).fontSize(10).fillColor('#000000');
+            doc.text(serviceName, 55, currentY + 8, { width: colWidths[0] - 10 });
+            doc.text('ጠቅላላ', 55 + colWidths[0], currentY + 8, { width: colWidths[1] - 10 });
+            
+            doc.font('Helvetica-Bold').text(summary.total.toString(), 55 + colWidths[0] + colWidths[1], currentY + 8, { 
+              width: colWidths[2] - 10,
+              align: 'center'
+            });
+            
+            doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
+               .stroke();
+            
+            currentY += rowHeight;
+          }
+        }
+        
+        if (currentY > 700) {
+          doc.addPage();
+          currentY = 50;
+          doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
+             .fill('#f0f0f0');
+          doc.font(contentFont).fontSize(12).fillColor('#000000');
+          doc.text('የአገልግሎት ስም', 55, currentY + 8, { width: colWidths[0] - 10 });
+          doc.text('ምድብ', 55 + colWidths[0], currentY + 8, { width: colWidths[1] - 10 });
+          doc.text('ብዛት', 55 + colWidths[0] + colWidths[1], currentY + 8, { width: colWidths[2] - 10 });
           doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
              .stroke();
-          
           currentY += rowHeight;
         }
-      }
+      });
+
+      // Final summary
+      doc.moveDown(1.5);
+      const summaryY = doc.y;
+      doc.rect(50, summaryY, colWidths[0] + colWidths[1] + colWidths[2], 30)
+         .fill('#e8f4fd')
+         .stroke();
       
-      // Page break check
-      if (currentY > 700) {
-        doc.addPage();
-        currentY = 50;
-        // Redraw header
-        doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
-           .fill('#f0f0f0');
-        doc.font(contentFont).fontSize(12).fillColor('#000000');
-        doc.text('የአገልግሎት ስም', 55, currentY + 8, { width: colWidths[0] - 10 });
-        doc.text('ምድብ', 55 + colWidths[0], currentY + 8, { width: colWidths[1] - 10 });
-        doc.text('ብዛት', 55 + colWidths[0] + colWidths[1], currentY + 8, { width: colWidths[2] - 10 });
-        doc.rect(50, currentY, colWidths[0] + colWidths[1] + colWidths[2], rowHeight)
-           .stroke();
-        currentY += rowHeight;
-      }
-    });
+      doc.font(contentFont).fontSize(12).fillColor('#000000');
+      doc.text('ጠቅላላ የአገልግሎት ብዛት፡', 55, summaryY + 10, { width: colWidths[0] + colWidths[1] - 10 });
+      doc.font('Helvetica-Bold').text(totalReports.toString(), 55 + colWidths[0] + colWidths[1], summaryY + 10, { 
+        align: 'center'
+      });
 
-    // Final summary
-    doc.moveDown(1.5);
-    
-    const summaryY = doc.y;
-    doc.rect(50, summaryY, colWidths[0] + colWidths[1] + colWidths[2], 30)
-       .fill('#e8f4fd')
-       .stroke();
-    
-    doc.font(contentFont).fontSize(12).fillColor('#000000');
-    doc.text('ጠቅላላ የአገልግሎት ብዛት፡', 55, summaryY + 10, { width: colWidths[0] + colWidths[1] - 10 });
-    doc.font('Helvetica-Bold').text(totalReports.toString(), 55 + colWidths[0] + colWidths[1], summaryY + 10, { 
-      width: colWidths[2] - 10,
-      align: 'center'
-    });
+      doc.end();
+      doc.on('end', () => {
+        resolve();
+      });
 
-    doc.end();
+    } catch (err) {
+      console.error('PDF Generation Error:', err);
+      reject(err);
+    }
+  });
 };
 
 module.exports = { prepareReportSummary, generateReportPDF };

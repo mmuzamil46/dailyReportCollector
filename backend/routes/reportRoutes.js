@@ -20,7 +20,7 @@ const router = express.Router();
 // Protected routes - updated to allow both Admin and Staff
 router.get('/', authMiddleware, getAllReports);
 router.get('/by-date-service', authMiddleware, getReportsByDateAndService);
-router.get('/generate-pdf', authMiddleware, authorizedRoles('Admin', 'Staff'), generatePDFReport);
+router.get('/generate-pdf', authMiddleware, authorizedRoles('Admin', 'Staff', 'User'), generatePDFReport);
 router.get('/daily-pdf', authMiddleware, generateWoredaPDFReport);
 router.get('/woredas', authMiddleware, getWoredas);
 router.get('/:id', authMiddleware, getReportById);

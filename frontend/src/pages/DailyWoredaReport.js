@@ -67,16 +67,43 @@ function DailyWoredaReport() {
 
       const response = await axios.get(`/api/reports/daily-pdf?woreda=${selectedWoreda}&date=${formattedDate}`, config);
 
-      const url = window.URL.createObjectURL(new Blob([response.data]));
+      // Check if the response is actually JSON (which might happen on error despite responseType: 'blob')
+      if (response.data.type === 'application/json') {
+        const text = await response.data.text();
+        const errorData = JSON.parse(text);
+        setError(errorData.message || 'Failed to generate report');
+        setLoading(false);
+        return;
+      }
+
+      const blob = new Blob([response.data], { type: 'application/pdf' });
+      const url = window.URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
       link.setAttribute('download', `daily_report_${selectedWoreda}_${formattedDate}.pdf`);
       document.body.appendChild(link);
       link.click();
-      link.remove();
+      
+      // Cleanup
+      setTimeout(() => {
+        window.URL.revokeObjectURL(url);
+        link.remove();
+      }, 100);
+
     } catch (err) {
       console.error('Error generating report:', err);
-      setError(err.response?.data?.message || 'Failed to generate report');
+      // If error response is a blob, we need to read it
+      if (err.response?.data instanceof Blob) {
+        const text = await err.response.data.text();
+        try {
+          const errorData = JSON.parse(text);
+          setError(errorData.message || 'Failed to generate report');
+        } catch (e) {
+          setError('Failed to generate report');
+        }
+      } else {
+        setError(err.response?.data?.message || 'Failed to generate report');
+      }
     } finally {
       setLoading(false);
     }

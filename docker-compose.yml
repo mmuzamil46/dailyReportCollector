@@ -8,6 +8,13 @@ services:
       - mongo-data:/data/db
     environment:
       - MONGO_INITDB_DATABASE=dailyReport
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
 
   backend:
     build: ./backend
@@ -20,7 +27,8 @@ services:
       - FRONTEND_URL=*
       - JWT_SECRET=civilregistrationandresidencyserviceagency
     depends_on:
-      - mongo
+      mongo:
+        condition: service_healthy
     restart: unless-stopped
 
   frontend:

@@ -48,7 +48,15 @@ export const getPlanVsReportAnalysis = (config) => {
   return api.get(`/analysis/plan-vs-report`, config);
 };
 
+
 export const getWoredaDetailedAnalysis = (woreda, config) => {
   return api.get(`/analysis/woreda/${encodeURIComponent(woreda)}`, config);
 };
+
+// Card Management APIs
+export const addCardStock = (data) => api.post('/cards/stock', data);
+export const transferCardStock = (data) => api.post('/cards/transfer', data);
+export const reportVoidCard = (data) => api.post('/cards/void', data);
+export const getCardStats = (params) => api.get('/cards/stats', { params });
+
 export default api;

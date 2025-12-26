@@ -390,7 +390,7 @@ const getWoredas = async (req, res) => {
     let woredas;
     // Allow both Admin and Staff to see all woredas
     if (req.user.role === 'Admin' || req.user.role === 'Staff') {
-      woredas = await User.find({ role: 'Staff', woreda: { $ne: null } }).distinct('woreda');
+      woredas = await User.find({ role: { $in: ['Staff', 'User'] }, woreda: { $ne: null } }).distinct('woreda');
     } else {
       if (!req.user.woreda) {
         return res.status(403).json({ message: 'No woreda assigned' });
@@ -570,48 +570,56 @@ const getWoredas = async (req, res) => {
 // @access  Private/Admin
 const generatePDFReport = async (req, res) => {
   try {
-    const { date } = req.query;
-    let startDate, endDate, displayDate;
+    const { startDate, endDate: queryEndDate } = req.query;
+    let start, end, displayStartDate, displayEndDate;
 
-    // Validate and parse date
-    if (date) {
-      const parsedDate = new Date(date);
-      if (isNaN(parsedDate)) {
-        return res.status(400).json({ message: 'Invalid date format. Use YYYY-MM-DD' });
-      }
-      startDate = new Date(parsedDate);
-      startDate.setHours(0, 0, 0, 0);
-      endDate = new Date(startDate);
-      endDate.setDate(endDate.getDate() + 1);
-      displayDate = parsedDate;
+    if (startDate && queryEndDate) {
+      start = new Date(startDate);
+      start.setHours(0, 0, 0, 0);
+      
+      end = new Date(queryEndDate);
+      end.setHours(23, 59, 59, 999);
+      
+      displayStartDate = start;
+      displayEndDate = end;
+    } else if (startDate) {
+      start = new Date(startDate);
+      start.setHours(0, 0, 0, 0);
+      end = new Date(start);
+      end.setHours(23, 59, 59, 999);
+      displayStartDate = start;
     } else {
-      startDate = new Date();
-      startDate.setHours(0, 0, 0, 0);
-      endDate = new Date(startDate);
-      endDate.setDate(endDate.getDate() + 1);
-      displayDate = new Date();
+      start = new Date();
+      start.setHours(0, 0, 0, 0);
+      end = new Date(start);
+      end.setHours(23, 59, 59, 999);
+      displayStartDate = start;
     }
 
-    console.log('Fetching reports for date range:', startDate, 'to', endDate);
+    const query = {
+      date: { $gte: start, $lte: end },
+    };
 
-    const reports = await Report.find({
-      date: { $gte: startDate, $lt: endDate },
-    }).populate('serviceId', 'name');
+    // Role-based filtering
+    let titleContext = "ጠቅላላ የክፍለ ከተማ";
+    if (req.user.role === 'User' || (req.user.role === 'Staff' && req.user.woreda)) {
+      if (req.user.woreda) {
+        query.woreda = req.user.woreda;
+        titleContext = `የወረዳ ${req.user.woreda}`;
+      }
+    }
 
-    console.log(`Found ${reports.length} reports`);
-
+    const reports = await Report.find(query).populate('serviceId', 'name');
     const services = await Service.find().select('name');
     
-    // Use utility to prepare data
     const reportSummary = prepareReportSummary(reports, services);
 
     res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', `attachment; filename=daily_report_${date || new Date().toISOString().split('T')[0]}.pdf`);
+    res.setHeader('Content-Disposition', `attachment; filename=report_${startDate || 'daily'}.pdf`);
 
-    const title = 'በአዲስ ከተማ ክፍለ ከተማ የሲቪል ምዝገባ እና የነዋሪነት አገልግሎት ጽ/ቤት ዕለታዊ ሪፖርት';
+    const title = `በአዲስ ከተማ ክፍለ ከተማ የሲቪል ምዝገባ እና የነዋሪነት አገልግሎት ጽ/ቤት ${titleContext} ሪፖርት`;
     
-    // Generate PDF
-    generateReportPDF(res, reportSummary, reports.length, displayDate, title);
+    await generateReportPDF(res, reportSummary, reports.length, displayStartDate, title, displayEndDate);
 
   } catch (error) {
     console.error('Error generating PDF report:', error);
@@ -660,7 +668,7 @@ const generateWoredaPDFReport = async (req, res) => {
 
     const title = `በአዲስ ከተማ ክፍለ ከተማ የሲቪል ምዝገባ እና የነዋሪነት አገልግሎት ጽ/ቤት የወረዳ ${woreda} ዕለታዊ ሪፖርት`;
 
-    generateReportPDF(res, reportSummary, reports.length, displayDate, title);
+    await generateReportPDF(res, reportSummary, reports.length, displayDate, title);
 
   } catch (error) {
     console.error('Error generating PDF report:', error);

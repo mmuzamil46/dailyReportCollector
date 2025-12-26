@@ -7,6 +7,9 @@ const reportRoutes = require('./routes/reportRoutes');
 const serviceRoutes = require('./routes/serviceRoutes');
 const userRoutes = require('./routes/userRoutes');
 const analysisRoutes = require('./routes/analysisRoutes');
+const planRoutes = require('./routes/planRoutes');
+const cardRoutes = require('./routes/cardRoutes');
+const notificationRoutes = require('./routes/notificationRoutes');
 require('dotenv').config();
 
 const app = express();
@@ -33,6 +36,8 @@ app.use('/api/services', serviceRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/plans', require('./routes/planRoutes'));
 app.use('/api/analysis', analysisRoutes);
+app.use('/api/cards', require('./routes/cardRoutes'));
+app.use('/api/notifications', require('./routes/notificationRoutes'));
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })

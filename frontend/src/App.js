@@ -12,30 +12,35 @@ import AdminDashboard from './pages/AdminDashboard';
 import GenerateReport from './pages/GenerateReport';
 import DailyWoredaReport from './pages/DailyWoredaReport';
 import Login from './components/Login';
-//import Register from './components/Register';
 import { useContext } from 'react';
 import PublicDisplay from './pages/PublicDisplay';
 import DataAnalysisReport from './pages/DataAnalysisReport';
 import PlanTable from './pages/PlanTable';
 import AnalysisDashboard from './pages/AnalysisDashboard';
+import CardManagement from './pages/CardManagement';
+import NotificationAlert from './components/NotificationAlert';
+import AdminNotification from './pages/AdminNotification';
+
 function ProtectedAdminRoute({ children }) {
   const { user } = useContext(AuthContext);
   return user && (user.role === 'Admin' || user.role === 'Staff') ? children : <Login />;
 }
-// function ProtectedRoute({ children }) {
-//   const { user } = useContext(AuthContext);
-//   return user ? children : <Login />;
-// }
+
+function ProtectedRoute({ children }) {
+  const { user } = useContext(AuthContext);
+  return user ? children : <Login />;
+}
+
 function App() {
   const location = useLocation();
   const hideNavbar = location.pathname === '/display';
   return (
     <AuthProvider>
-    
-    {!hideNavbar && <Navbar />}
-        <Routes>
-          <Route path="/" element={<Home />} />
-             <Route
+      <NotificationAlert />
+      {!hideNavbar && <Navbar />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
           path="/services"
           element={
             <ProtectedAdminRoute>
@@ -43,13 +48,13 @@ function App() {
             </ProtectedAdminRoute>
           }
         />
-          <Route path="/reports" element={<Reports />} />
-            <Route path="/daily-report" element={<DailyWoredaReport />}/>
-          <Route path="/admin" element={<AdminDashboard />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/plan-table" element={<PlanTable />} />
-          <Route path="/analysis" element={<AnalysisDashboard />} />
-           <Route
+        <Route path="/reports" element={<Reports />} />
+        <Route path="/daily-report" element={<DailyWoredaReport />} />
+        <Route path="/admin" element={<AdminDashboard />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/plan-table" element={<PlanTable />} />
+        <Route path="/analysis" element={<AnalysisDashboard />} />
+        <Route
           path="/services/:id/edit"
           element={
             <ProtectedAdminRoute>
@@ -57,7 +62,7 @@ function App() {
             </ProtectedAdminRoute>
           }
         />
-           <Route
+        <Route
           path="/users/register"
           element={
             <ProtectedAdminRoute>
@@ -65,15 +70,15 @@ function App() {
             </ProtectedAdminRoute>
           }
         />
-           <Route
+        <Route
           path="/generate-report"
           element={
-            <ProtectedAdminRoute>
+            <ProtectedRoute>
               <GenerateReport />
-            </ProtectedAdminRoute>
+            </ProtectedRoute>
           }
         />
-          <Route
+        <Route
           path="/all-reports"
           element={
             <ProtectedAdminRoute>
@@ -81,7 +86,15 @@ function App() {
             </ProtectedAdminRoute>
           }
         />
-          <Route
+        <Route
+          path="/notifications/manage"
+          element={
+            <ProtectedAdminRoute>
+              <AdminNotification />
+            </ProtectedAdminRoute>
+          }
+        />
+        <Route
           path="/data-analysis"
           element={
             <ProtectedAdminRoute>
@@ -89,14 +102,19 @@ function App() {
             </ProtectedAdminRoute>
           }
         />
-         
-          <Route path="/display" element={<PublicDisplay />} />
-        </Routes>
-      
+        <Route path="/display" element={<PublicDisplay />} />
+        <Route 
+          path="/cards" 
+          element={
+            <ProtectedAdminRoute>
+              <CardManagement />
+            </ProtectedAdminRoute>
+          } 
+        />
+      </Routes>
     </AuthProvider>
   );
 }
-
 
 export default function AppWrapper() {
   return (
