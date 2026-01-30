@@ -19,6 +19,33 @@ const serviceSchema = new Schema(
       type: Number,
       default: null,
     },
+    price: {
+      type: Number,
+      default: 0
+    },
+    categories: [{
+      name: String,
+      price: Number,
+      excludeFromReporting: { type: Boolean, default: false },
+      hasPriceVariants: { type: Boolean, default: false },
+      priceVariants: [{
+        label: String,
+        price: Number
+      }]
+    }],
+    isSubcityOnly: {
+      type: Boolean,
+      default: false,
+    },
+    requiresEvidence: {
+      type: Boolean,
+      default: false,
+    },
+    evidenceTypes: [String],
+    showCardSerial: { type: Boolean, default: true },
+    showReferenceNo: { type: Boolean, default: true },
+    showRegistrationNumber: { type: Boolean, default: false },
+    showLetterNumber: { type: Boolean, default: false },
     isActive: {
       type: Boolean,
       default: true,

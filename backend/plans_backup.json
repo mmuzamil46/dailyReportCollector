@@ -1,0 +1,3480 @@
+[{
+  "_id": {
+    "$oid": "69241357f3b8efa437f4e09a"
+  },
+  "budgetYear": "2018",
+  "woreda": "Woreda 1",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-24T08:12:07.853Z"
+  },
+  "createdBy": {
+    "$oid": "68c3c3f2a52a322c7fe2966f"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 230,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacc0"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 60,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacc1"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 827,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacc2"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 91,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacc3"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 18,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacc4"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 80,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacc5"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 84,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacc6"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 72,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacc7"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 20,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacc8"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 1,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacc9"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 1,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacca"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 8,
+      "_id": {
+        "$oid": "693198341fdb86f7e82caccb"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 667,
+      "_id": {
+        "$oid": "693198341fdb86f7e82caccc"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 2207,
+      "_id": {
+        "$oid": "693198341fdb86f7e82caccd"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 350,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacce"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 531,
+      "_id": {
+        "$oid": "693198341fdb86f7e82caccf"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 450,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacd0"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 20,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacd1"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 192,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacd2"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacd3"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacd4"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 1,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacd5"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 3794,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacd6"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 90,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacd7"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 350,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacd8"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 96,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacd9"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "693198341fdb86f7e82cacda"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-12-04T14:18:28.921Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6924477af3b8efa437f4e09b"
+  },
+  "budgetYear": "2018",
+  "woreda": "Woreda 3",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-24T11:54:34.669Z"
+  },
+  "createdBy": {
+    "$oid": "691338d4508e1736e633958c"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 410,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c1d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 90,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c1e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 3214,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c1f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 163,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c20"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 24,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c21"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 161,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c22"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 119,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c23"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 147,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c24"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 40,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c25"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 2,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c26"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 2,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c27"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 28,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c28"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 1027,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c29"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 4001,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c2a"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 594,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c2b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 1260,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c2c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 1150,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c2d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 50,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c2e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 300,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c2f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c30"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c31"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 1,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c32"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 8140,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c33"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 200,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c34"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 580,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c35"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 100,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c36"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "692fe2bb32c68edf92278c37"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-12-03T07:11:55.385Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6924496df3b8efa437f4e09c"
+  },
+  "budgetYear": "2018",
+  "woreda": "Woreda 4",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-24T12:02:53.336Z"
+  },
+  "createdBy": {
+    "$oid": "68c3c3f2a52a322c7fe2966f"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 2100,
+      "_id": {
+        "$oid": "6924496df4f5309b3867562c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 100,
+      "_id": {
+        "$oid": "6924496df4f5309b3867562d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 1398,
+      "_id": {
+        "$oid": "6924496df4f5309b3867562e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 117,
+      "_id": {
+        "$oid": "6924496df4f5309b3867562f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 20,
+      "_id": {
+        "$oid": "6924496df4f5309b38675630"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 120,
+      "_id": {
+        "$oid": "6924496df4f5309b38675631"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 80,
+      "_id": {
+        "$oid": "6924496df4f5309b38675632"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 80,
+      "_id": {
+        "$oid": "6924496df4f5309b38675633"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 30,
+      "_id": {
+        "$oid": "6924496df4f5309b38675634"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 2,
+      "_id": {
+        "$oid": "6924496df4f5309b38675635"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 2,
+      "_id": {
+        "$oid": "6924496df4f5309b38675636"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 11,
+      "_id": {
+        "$oid": "6924496df4f5309b38675637"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 1080,
+      "_id": {
+        "$oid": "6924496df4f5309b38675638"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 3820,
+      "_id": {
+        "$oid": "6924496df4f5309b38675639"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 541,
+      "_id": {
+        "$oid": "6924496df4f5309b3867563a"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 990,
+      "_id": {
+        "$oid": "6924496df4f5309b3867563b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 700,
+      "_id": {
+        "$oid": "6924496df4f5309b3867563c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 40,
+      "_id": {
+        "$oid": "6924496df4f5309b3867563d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 250,
+      "_id": {
+        "$oid": "6924496df4f5309b3867563e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "6924496df4f5309b3867563f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "6924496df4f5309b38675640"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 1,
+      "_id": {
+        "$oid": "6924496df4f5309b38675641"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 7694,
+      "_id": {
+        "$oid": "6924496df4f5309b38675642"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 200,
+      "_id": {
+        "$oid": "6924496df4f5309b38675643"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 650,
+      "_id": {
+        "$oid": "6924496df4f5309b38675644"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 100,
+      "_id": {
+        "$oid": "6924496df4f5309b38675645"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "6924496df4f5309b38675646"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-11-24T12:02:53.336Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6925699bad8795adfda2af4b"
+  },
+  "budgetYear": "2018",
+  "woreda": "Woreda 5",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-25T08:32:27.225Z"
+  },
+  "createdBy": {
+    "$oid": "68c3c3f2a52a322c7fe2966f"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 325,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9475"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 80,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9476"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 636,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9477"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 100,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9478"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 18,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9479"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 110,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf947a"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 75,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf947b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 71,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf947c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 20,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf947d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 1,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf947e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 3,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf947f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 35,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9480"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 886,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9481"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 1523,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9482"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 261,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9483"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 630,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9484"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 521,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9485"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 20,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9486"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 180,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9487"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9488"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf9489"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 1,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf948a"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 4100,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf948b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 80,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf948c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 316,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf948d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 80,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf948e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "6925699bcecd69e2e6cf948f"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-11-25T08:32:27.225Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69256c7fad8795adfda2af4c"
+  },
+  "budgetYear": "2018",
+  "woreda": "Woreda 6",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-25T08:44:47.454Z"
+  },
+  "createdBy": {
+    "$oid": "68c3c3f2a52a322c7fe2966f"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 1056,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf968b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 250,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf968c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 4253,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf968d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 164,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf968e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 60,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf968f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 357,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf9690"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 135,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf9691"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 147,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf9692"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 40,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf9693"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 5,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf9694"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 8,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf9695"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 81,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf9696"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 1102,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf9697"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 4985,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf9698"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 752,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf9699"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 1031,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf969a"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 1000,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf969b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 30,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf969c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 356,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf969d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf969e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf969f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 2,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf96a0"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 10524,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf96a1"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 400,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf96a2"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 850,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf96a3"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 140,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf96a4"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "69256c7fcecd69e2e6cf96a5"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-11-25T08:44:47.454Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69259d63ad8795adfda2af4d"
+  },
+  "budgetYear": "2018",
+  "woreda": "Woreda 8",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-25T12:13:22.927Z"
+  },
+  "createdBy": {
+    "$oid": "68c3c3f2a52a322c7fe2966f"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 580,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dbe"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 160,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dbf"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 3214,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dc0"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 145,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dc1"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 46,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dc2"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 261,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dc3"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 130,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dc4"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 102,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dc5"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 30,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dc6"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 273,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dc7"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 16,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dc8"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 89,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dc9"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 1001,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dca"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 4557,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dcb"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 365,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dcc"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 1140,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dcd"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 812,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dce"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 30,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dcf"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 290,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dd0"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dd1"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dd2"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 1,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dd3"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 6784,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dd4"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 260,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dd5"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 850,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dd6"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 110,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dd7"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "69259d62eff400f09b824dd8"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-11-25T12:13:22.927Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69259e17ad8795adfda2af4e"
+  },
+  "budgetYear": "2018",
+  "woreda": "Woreda 9",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-25T12:16:23.259Z"
+  },
+  "createdBy": {
+    "$oid": "68c3c3f2a52a322c7fe2966f"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 660,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e0d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 220,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e0e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 2709,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e0f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 141,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e10"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 90,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e11"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 278,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e12"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 100,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e13"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 85,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e14"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 30,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e15"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 5,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e16"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 18,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e17"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 66,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e18"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 908,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e19"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 4751,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e1a"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 401,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e1b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 944,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e1c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 800,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e1d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 70,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e1e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 190,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e1f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e20"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e21"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 1,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e22"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 6344,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e23"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 260,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e24"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 700,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e25"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 180,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e26"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "69259e17eff400f09b824e27"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-11-25T12:16:23.259Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69259f3ead8795adfda2af4f"
+  },
+  "woreda": "Woreda 10",
+  "budgetYear": "2018",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-25T12:21:18.645Z"
+  },
+  "createdBy": {
+    "$oid": "68c3c3f2a52a322c7fe2966f"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 210,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824e9a"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 70,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824e9b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 612,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824e9c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 71,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824e9d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 18,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824e9e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 100,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824e9f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 50,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824ea0"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 65,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824ea1"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 20,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824ea2"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 1,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824ea3"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 5,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824ea4"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 18,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824ea5"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 670,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824ea6"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 1410,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824ea7"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 264,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824ea8"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 632,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824ea9"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 580,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824eaa"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 30,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824eab"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 180,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824eac"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824ead"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824eae"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 1,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824eaf"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 4189,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824eb0"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 90,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824eb1"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 350,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824eb2"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 80,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824eb3"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "69259f3eeff400f09b824eb4"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-11-25T12:21:18.645Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69259ffaad8795adfda2af50"
+  },
+  "budgetYear": "2018",
+  "woreda": "Woreda 11",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-25T12:24:26.489Z"
+  },
+  "createdBy": {
+    "$oid": "68c3c3f2a52a322c7fe2966f"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 1527,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f3b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 180,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f3c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 1896,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f3d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 123,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f3e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 45,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f3f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 226,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f40"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 90,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f41"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 96,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f42"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 30,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f43"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 5,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f44"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 15,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f45"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 46,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f46"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 912,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f47"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 3900,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f48"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 302,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f49"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 873,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f4a"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 780,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f4b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 40,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f4c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 280,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f4d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f4e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f4f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 2,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f50"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 4335,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f51"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 200,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f52"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 580,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f53"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 110,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f54"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "69259ffaeff400f09b824f55"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-11-25T12:24:26.489Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6925a0bead8795adfda2af51"
+  },
+  "budgetYear": "2018",
+  "woreda": "Woreda 12",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-25T12:27:42.420Z"
+  },
+  "createdBy": {
+    "$oid": "68c3c3f2a52a322c7fe2966f"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 2135,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fe0"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 200,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fe1"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 4161,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fe2"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 140,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fe3"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 100,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fe4"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 320,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fe5"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 120,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fe6"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 123,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fe7"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 40,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fe8"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 5,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fe9"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 25,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fea"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 69,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824feb"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 1007,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fec"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 4785,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fed"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 403,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fee"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 1000,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824fef"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 870,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824ff0"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 50,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824ff1"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 350,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824ff2"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824ff3"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824ff4"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 2,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824ff5"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 6507,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824ff6"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 250,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824ff7"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 650,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824ff8"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 154,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824ff9"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "6925a0beeff400f09b824ffa"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-11-25T12:27:42.420Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6925a18dad8795adfda2af52"
+  },
+  "woreda": "Woreda 13",
+  "budgetYear": "2018",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-25T12:31:09.421Z"
+  },
+  "createdBy": {
+    "$oid": "68c3c3f2a52a322c7fe2966f"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 1040,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250b0"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 130,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250b1"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 2977,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250b2"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 145,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250b3"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 60,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250b4"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 236,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250b5"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 110,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250b6"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 109,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250b7"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 30,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250b8"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 5,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250b9"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 12,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250ba"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 55,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250bb"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 870,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250bc"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 3870,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250bd"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 407,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250be"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 872,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250bf"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 800,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250c0"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 107,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250c1"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 280,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250c2"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250c3"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250c4"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 1,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250c5"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 4841,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250c6"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 210,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250c7"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 590,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250c8"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 130,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250c9"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "6925a18deff400f09b8250ca"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-11-25T12:31:09.421Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6925a230ad8795adfda2af53"
+  },
+  "budgetYear": "2018",
+  "woreda": "Woreda 14",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-25T12:33:52.957Z"
+  },
+  "createdBy": {
+    "$oid": "68c3c3f2a52a322c7fe2966f"
+  },
+  "notes": "",
+  "services": [
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በወቅቱ",
+      "plan": 670,
+      "_id": {
+        "$oid": "6925a230eff400f09b825116"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በዘገየ",
+      "plan": 151,
+      "_id": {
+        "$oid": "6925a230eff400f09b825117"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ab8fe31440c6366a6d95"
+      },
+      "category": "በነባር",
+      "plan": 2093,
+      "_id": {
+        "$oid": "6925a230eff400f09b825118"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በወቅቱ",
+      "plan": 120,
+      "_id": {
+        "$oid": "6925a230eff400f09b825119"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በዘገየ",
+      "plan": 50,
+      "_id": {
+        "$oid": "6925a230eff400f09b82511a"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ac8ce31440c6366a6d99"
+      },
+      "category": "በነባር",
+      "plan": 200,
+      "_id": {
+        "$oid": "6925a230eff400f09b82511b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በወቅቱ",
+      "plan": 107,
+      "_id": {
+        "$oid": "6925a230eff400f09b82511c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በዘገየ",
+      "plan": 103,
+      "_id": {
+        "$oid": "6925a230eff400f09b82511d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7aca0e31440c6366a6d9d"
+      },
+      "category": "በነባር",
+      "plan": 31,
+      "_id": {
+        "$oid": "6925a230eff400f09b82511e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በወቅቱ",
+      "plan": 5,
+      "_id": {
+        "$oid": "6925a230eff400f09b82511f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በዘገየ",
+      "plan": 13,
+      "_id": {
+        "$oid": "6925a230eff400f09b825120"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acb2e31440c6366a6da1"
+      },
+      "category": "በነባር",
+      "plan": 42,
+      "_id": {
+        "$oid": "6925a230eff400f09b825121"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "አዲስ",
+      "plan": 946,
+      "_id": {
+        "$oid": "6925a230eff400f09b825122"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "እድሳት",
+      "plan": 4124,
+      "_id": {
+        "$oid": "6925a230eff400f09b825123"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acd2e31440c6366a6da5"
+      },
+      "category": "ምትክ",
+      "plan": 351,
+      "_id": {
+        "$oid": "6925a230eff400f09b825124"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "አዲስ",
+      "plan": 890,
+      "_id": {
+        "$oid": "6925a230eff400f09b825125"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "እድሳት",
+      "plan": 652,
+      "_id": {
+        "$oid": "6925a230eff400f09b825126"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7acede31440c6366a6da9"
+      },
+      "category": "ምትክ",
+      "plan": 40,
+      "_id": {
+        "$oid": "6925a230eff400f09b825127"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7ad08e31440c6366a6dad"
+      },
+      "category": null,
+      "plan": 280,
+      "_id": {
+        "$oid": "6925a230eff400f09b825128"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በወቅቱ",
+      "plan": 0,
+      "_id": {
+        "$oid": "6925a230eff400f09b825129"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በዘገየ",
+      "plan": 0,
+      "_id": {
+        "$oid": "6925a230eff400f09b82512a"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68d7af6ee31440c6366a6db1"
+      },
+      "category": "በነባር",
+      "plan": 1,
+      "_id": {
+        "$oid": "6925a230eff400f09b82512b"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e6560d42fe3e771cc76d0b"
+      },
+      "category": null,
+      "plan": 4536,
+      "_id": {
+        "$oid": "6925a230eff400f09b82512c"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656b142fe3e771cc76d13"
+      },
+      "category": null,
+      "plan": 210,
+      "_id": {
+        "$oid": "6925a230eff400f09b82512d"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656d142fe3e771cc76d15"
+      },
+      "category": null,
+      "plan": 590,
+      "_id": {
+        "$oid": "6925a230eff400f09b82512e"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e656e942fe3e771cc76d17"
+      },
+      "category": null,
+      "plan": 110,
+      "_id": {
+        "$oid": "6925a230eff400f09b82512f"
+      }
+    },
+    {
+      "serviceId": {
+        "$oid": "68e67f44ad6206d93dec5143"
+      },
+      "category": null,
+      "plan": 139,
+      "_id": {
+        "$oid": "6925a230eff400f09b825130"
+      }
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-11-25T12:33:52.957Z"
+  }
+}]

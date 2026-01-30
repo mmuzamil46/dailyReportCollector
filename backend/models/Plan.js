@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { normalizeWoreda } = require('../utils/woredaUtils');
 
 const servicePlanSchema = new mongoose.Schema({
   serviceId: {
@@ -46,5 +47,13 @@ const planSchema = new mongoose.Schema(
 
 // Ensure only ONE plan document per woreda + budgetYear
 planSchema.index({ woreda: 1, budgetYear: 1 }, { unique: true });
+
+// Normalize woreda before saving
+planSchema.pre('save', function(next) {
+  if (this.woreda) {
+    this.woreda = normalizeWoreda(this.woreda);
+  }
+  next();
+});
 
 module.exports = mongoose.model('Plan', planSchema);

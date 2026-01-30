@@ -1,0 +1,327 @@
+/* Services Page - Professional Dark Governmental Styling */
+.services-page {
+    padding-bottom: 5rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    animation: fadeIn 0.4s ease-out;
+    color: #ffffff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.glass-header {
+    background: linear-gradient(135deg, #2b6cb0 0%, #3182ce 100%);
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 10px 30px rgba(49, 130, 206, 0.3);
+}
+
+.premium-title {
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.glass-header .text-secondary {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Professional Dark Stats Section */
+.stat-card-gold {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    border: 2px solid #4a5568;
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.stat-card-gold:hover {
+    border-color: #3182ce;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(49, 130, 206, 0.2);
+}
+
+.text-soft-gold {
+    color: #cbd5e0 !important;
+}
+
+/* Professional Dark Service Cards */
+.services-card {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    border: 2px solid #4a5568;
+    border-radius: 16px;
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.services-card:hover {
+    transform: translateY(-5px);
+    border-color: #3182ce;
+    box-shadow: 0 12px 35px rgba(49, 130, 206, 0.2);
+}
+
+.service-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.service-description {
+    color: #e2e8f0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.service-meta {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Professional Action Buttons */
+.btn-action-pro {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-action-edit-pro {
+    background: linear-gradient(135deg, #d69e2e 0%, #b7791f 100%);
+    color: #ffffff;
+    border: 1px solid #b7791f;
+}
+
+.btn-action-edit-pro:hover {
+    background: linear-gradient(135deg, #b7791f 0%, #975a16 100%);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(214, 158, 46, 0.4);
+}
+
+.btn-action-delete-pro {
+    background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+    color: #ffffff;
+    border: 1px solid #c53030;
+}
+
+.btn-action-delete-pro:hover {
+    background: linear-gradient(135deg, #c53030 0%, #9b2c2c 100%);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(229, 62, 62, 0.4);
+}
+
+/* Professional Dark Search Area */
+.search-container-premium {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 2px solid #4a5568;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.premium-search {
+    background: #2d3748 !important;
+    border: 2px solid #4a5568 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 0.75rem 1rem !important;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.premium-search:focus {
+    border-color: #3182ce !important;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2) !important;
+    background: #2d3748 !important;
+    color: #ffffff !important;
+}
+
+.premium-search::placeholder {
+    color: #a0aec0 !important;
+}
+
+/* Professional Add Button */
+.btn-premium-add {
+    background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 0.75rem 2rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 15px rgba(49, 130, 206, 0.3);
+}
+
+.btn-premium-add:hover {
+    background: linear-gradient(135deg, #2b6cb0 0%, #2c5282 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(49, 130, 206, 0.4);
+    color: #ffffff;
+}
+
+.btn-outline-secondary {
+    background: transparent;
+    border: 2px solid #4a5568;
+    color: #e2e8f0;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 0.75rem 2rem;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-secondary:hover {
+    background: #4a5568;
+    border-color: #718096;
+    color: #ffffff;
+}
+
+/* Professional Dark Add Form Card */
+.card-premium {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    border-radius: 16px;
+    border: 2px solid #4a5568;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.text-gold {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+/* Professional Dark Form Controls */
+.contrast-input {
+    background: #2d3748 !important;
+    border: 2px solid #4a5568 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    padding: 0.75rem 1rem !important;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.contrast-input:focus {
+    border-color: #3182ce !important;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2) !important;
+    background: #2d3748 !important;
+    color: #ffffff !important;
+}
+
+.contrast-input::placeholder {
+    color: #a0aec0 !important;
+}
+
+.label-high-contrast {
+    color: #e2e8f0 !important;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Professional Badges */
+.badge-pro {
+    padding: 0.375rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.bg-success.text-white {
+    background: linear-gradient(135deg, #38a169 0%, #2f855a 100%) !important;
+    border: 1px solid #2f855a;
+}
+
+.bg-danger.text-white {
+    background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%) !important;
+    border: 1px solid #c53030;
+}
+
+/* Professional Empty State */
+.border-dashed {
+    border: 2px dashed #4a5568 !important;
+    background: #2d3748;
+    color: #e2e8f0;
+}
+
+/* Professional Alert */
+.alert-danger {
+    background: linear-gradient(135deg, #742a2a 0%, #9b2c2c 100%);
+    border: 2px solid #e53e3e;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+.alert-danger .btn-close {
+    color: #ffffff;
+}
+
+/* Professional Loading Spinner */
+.spinner-border.text-warning {
+    border-color: #d69e2e;
+    border-right-color: transparent;
+}
+
+/* Professional Form Select */
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23e2e8f0' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+}
+
+.form-select:focus {
+    border-color: #3182ce !important;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2) !important;
+}
+
+/* Dark theme specific fixes */
+.display-6 {
+    color: #ffffff !important;
+}
+
+.text-success {
+    color: #68d391 !important;
+}
+
+.text-info {
+    color: #63b3ed !important;
+}
+
+.text-secondary {
+    color: #a0aec0 !important;
+}
+
+/* Ensure all text is visible in dark theme */
+.services-page * {
+    color: inherit;
+}
+
+.services-page .service-meta span {
+    color: #cbd5e0 !important;
+}
+
+/* Fix for any remaining white text issues */
+.text-white {
+    color: #ffffff !important;
+}

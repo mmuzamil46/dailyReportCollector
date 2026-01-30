@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -10,7 +11,11 @@ const analysisRoutes = require('./routes/analysisRoutes');
 const planRoutes = require('./routes/planRoutes');
 const cardRoutes = require('./routes/cardRoutes');
 const notificationRoutes = require('./routes/notificationRoutes');
-require('dotenv').config();
+const syncRoutes = require('./routes/syncRoutes');
+const remoteReportRoutes = require('./routes/remoteReportRoutes');
+const remoteOfficerRoutes = require('./routes/remoteOfficerRoutes');
+const { initSyncService } = require('./utils/syncService');
+require('./services/syncScheduler'); // Auto-starts the aggregate sync scheduler
 
 const app = express();
 const server = http.createServer(app);
@@ -38,6 +43,9 @@ app.use('/api/plans', require('./routes/planRoutes'));
 app.use('/api/analysis', analysisRoutes);
 app.use('/api/cards', require('./routes/cardRoutes'));
 app.use('/api/notifications', require('./routes/notificationRoutes'));
+app.use('/api/sync', syncRoutes);
+app.use('/api/ontime-reg', remoteReportRoutes);
+app.use('/api/remote-officers', remoteOfficerRoutes);
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -45,4 +53,8 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
   .catch(err => console.error('MongoDB connection error:', err));
 
 const PORT = process.env.PORT || 3000;
-server.listen(PORT, '0.0.0.0', () => console.log(`Server running on port ${PORT}`));
+server.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running on port ${PORT}`);
+    // Initialize the sync service after server starts
+    initSyncService();
+});

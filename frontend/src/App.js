@@ -20,6 +20,9 @@ import AnalysisDashboard from './pages/AnalysisDashboard';
 import CardManagement from './pages/CardManagement';
 import NotificationAlert from './components/NotificationAlert';
 import AdminNotification from './pages/AdminNotification';
+import AtlasSync from './pages/AtlasSync';
+import RemoteReport from './pages/RemoteReport';
+import CreateRemoteOfficer from './pages/CreateRemoteOfficer';
 
 function ProtectedAdminRoute({ children }) {
   const { user } = useContext(AuthContext);
@@ -108,6 +111,30 @@ function App() {
           element={
             <ProtectedAdminRoute>
               <CardManagement />
+            </ProtectedAdminRoute>
+          } 
+        />
+        <Route 
+          path="/atlas-sync" 
+          element={
+            <ProtectedAdminRoute>
+              <AtlasSync />
+            </ProtectedAdminRoute>
+          } 
+        />
+        <Route 
+          path="/remote-report" 
+          element={
+            <ProtectedAdminRoute>
+              <RemoteReport />
+            </ProtectedAdminRoute>
+          } 
+        />
+        <Route 
+          path="/remote-officers/new" 
+          element={
+            <ProtectedAdminRoute>
+              <CreateRemoteOfficer />
             </ProtectedAdminRoute>
           } 
         />

@@ -33,7 +33,11 @@ const getServiceById = async (req, res) => {
 // @route   POST /api/services
 // @access  Private (Admin)
 const createService = async (req, res) => {
-  const { name, description, yearlyPlan } = req.body;
+  const { 
+    name, description, yearlyPlan, categories, 
+    isSubcityOnly, requiresEvidence, evidenceTypes,
+    showCardSerial, showReferenceNo, showRegistrationNumber, showLetterNumber 
+  } = req.body;
 
   if (!name) {
     return res.status(400).json({ message: 'Service name is required' });
@@ -44,6 +48,14 @@ const createService = async (req, res) => {
       name,
       description,
       yearlyPlan: yearlyPlan !== undefined ? Number(yearlyPlan) : null,
+      categories: categories || [],
+      isSubcityOnly: !!isSubcityOnly,
+      requiresEvidence: !!requiresEvidence,
+      evidenceTypes: evidenceTypes || [],
+      showCardSerial: showCardSerial !== undefined ? showCardSerial : true,
+      showReferenceNo: showReferenceNo !== undefined ? showReferenceNo : true,
+      showRegistrationNumber: !!showRegistrationNumber,
+      showLetterNumber: !!showLetterNumber,
       createdBy: req.user.id,
     });
     const createdService = await service.save();
@@ -62,7 +74,11 @@ const createService = async (req, res) => {
 // @route   PUT /api/services/:id
 // @access  Private (Admin)
 const updateService = async (req, res) => {
-  const { name, description, yearlyPlan, isActive } = req.body;
+  const { 
+    name, description, yearlyPlan, categories, isActive,
+    isSubcityOnly, requiresEvidence, evidenceTypes,
+    showCardSerial, showReferenceNo, showRegistrationNumber, showLetterNumber 
+  } = req.body;
 
   try {
     const service = await Service.findById(req.params.id);
@@ -73,7 +89,15 @@ const updateService = async (req, res) => {
     service.name = name || service.name;
     service.description = description || service.description;
     service.yearlyPlan = yearlyPlan !== undefined ? Number(yearlyPlan) : service.yearlyPlan;
+    service.categories = categories || service.categories;
     service.isActive = isActive !== undefined ? isActive : service.isActive;
+    service.isSubcityOnly = isSubcityOnly !== undefined ? !!isSubcityOnly : service.isSubcityOnly;
+    service.requiresEvidence = requiresEvidence !== undefined ? !!requiresEvidence : service.requiresEvidence;
+    service.evidenceTypes = evidenceTypes || service.evidenceTypes;
+    service.showCardSerial = showCardSerial !== undefined ? showCardSerial : service.showCardSerial;
+    service.showReferenceNo = showReferenceNo !== undefined ? showReferenceNo : service.showReferenceNo;
+    service.showRegistrationNumber = showRegistrationNumber !== undefined ? !!showRegistrationNumber : service.showRegistrationNumber;
+    service.showLetterNumber = showLetterNumber !== undefined ? !!showLetterNumber : service.showLetterNumber;
     service.updatedBy = req.user.id;
 
     const updatedService = await service.save();

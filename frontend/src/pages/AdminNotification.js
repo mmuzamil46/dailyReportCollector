@@ -133,6 +133,33 @@ function AdminNotification() {
                 )}
               </div>
             </form>
+
+            <hr className="bg-secondary my-4" />
+            
+            <div className="text-center">
+              <h5>🏆 የዕለቱ አሸናፊ (Daily Winner)</h5>
+              <p className="small text-muted mb-3">የዛሬውን ምርጥ አፈጻጸም ወረዳ ለሁሉም ያሳውቁ</p>
+              <button 
+                className="btn btn-warning fw-bold w-100 py-3 shadow-sm hover-elevate"
+                onClick={async () => {
+                  if (window.confirm('የዛሬውን አሸናፊ ማስላት እና ለሁሉም ማሳወቅ ይፈልጋሉ?')) {
+                    try {
+                      setLoading(true);
+                      const res = await api.post('/reports/winner/announce');
+                      setSuccess(res.data.message);
+                      fetchData();
+                    } catch (err) {
+                      setError(err.response?.data?.message || 'አሸናፊውን ማሳወቅ አልተቻለም');
+                    } finally {
+                      setLoading(false);
+                    }
+                  }
+                }}
+                disabled={loading}
+              >
+                {loading ? 'በማስላት ላይ...' : '🏆 የዕለቱን አሸናፊ አሳውቅ (Announce)'}
+              </button>
+            </div>
           </div>
         </div>
 

@@ -1,0 +1,288 @@
+/* Governmental Professional Styling */
+.premium-modal .modal-content {
+    background: linear-gradient(135deg, #1a3a52 0%, #2c5282 100%); /* Professional Government Blue */
+    border: 2px solid #3182ce;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    color: #ffffff;
+}
+
+.premium-modal .modal-header {
+    border-bottom: 2px solid rgba(49, 130, 206, 0.3);
+    background: linear-gradient(90deg, #2c5282 0%, #2b6cb0 100%);
+    border-radius: 10px 10px 0 0;
+}
+
+.premium-modal .modal-title {
+    color: #f7fafc;
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.premium-modal .modal-body {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    color: #2d3748;
+    padding: 2rem;
+}
+
+.premium-modal label {
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.premium-modal p {
+    color: #2d3748;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding-bottom: 0.5rem;
+}
+
+/* Main Container */
+.container.mt-5 {
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border: 1px solid #e2e8f0;
+}
+
+/* Professional Table Styling */
+.table-custom {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid #e2e8f0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.table-custom thead {
+    background: linear-gradient(90deg, #2b6cb0 0%, #3182ce 100%);
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+}
+
+.table-custom thead th {
+    border: none;
+    padding: 1rem 0.75rem;
+    font-weight: 600;
+}
+
+.table-custom tbody tr {
+    border-bottom: 1px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+.table-custom tbody tr:hover {
+    background-color: #f7fafc !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.table-custom td {
+    color: #2d3748 !important;
+    vertical-align: middle;
+    padding: 0.875rem 0.75rem;
+    border-color: #e2e8f0;
+    font-weight: 500;
+}
+
+/* Professional Action Buttons */
+.btn-group-sm .btn {
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    margin: 0 2px;
+}
+
+.btn-outline-info {
+    background: #3182ce;
+    border-color: #3182ce;
+    color: #ffffff;
+}
+
+.btn-outline-info:hover {
+    background: #2c5282;
+    border-color: #2c5282;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(49, 130, 206, 0.3);
+}
+
+.btn-outline-warning {
+    background: #d69e2e;
+    border-color: #d69e2e;
+    color: #ffffff;
+}
+
+.btn-outline-warning:hover {
+    background: #b7791f;
+    border-color: #b7791f;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(214, 158, 46, 0.3);
+}
+
+.btn-outline-danger {
+    background: #e53e3e;
+    border-color: #e53e3e;
+    color: #ffffff;
+}
+
+.btn-outline-danger:hover {
+    background: #c53030;
+    border-color: #c53030;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(229, 62, 62, 0.3);
+}
+
+/* Professional Form Controls */
+.contrast-input {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    color: #2d3748;
+    border-radius: 8px;
+    padding: 0.625rem 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.contrast-input:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+    background: #ffffff;
+    color: #2d3748;
+}
+
+.label-high-contrast {
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Professional Badge Styling */
+.badge-evidence {
+    background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+    border: 1px solid #2c5282;
+    color: #ffffff;
+    padding: 0.375rem 0.75rem;
+    font-weight: 500;
+    border-radius: 6px;
+    font-size: 0.75rem;
+}
+
+.bg-secondary.bg-opacity-25 {
+    background: #718096 !important;
+    opacity: 0.9;
+    color: #ffffff !important;
+    border: 1px solid #4a5568;
+}
+
+/* Professional Card Header */
+.card.bg-primary {
+    background: linear-gradient(135deg, #2b6cb0 0%, #3182ce 100%) !important;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(49, 130, 206, 0.3);
+}
+
+/* Professional Pagination */
+.btn-outline-light {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    color: #4a5568;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.5rem 1.25rem;
+    transition: all 0.2s ease;
+}
+
+.btn-outline-light:hover {
+    background: #3182ce;
+    border-color: #3182ce;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(49, 130, 206, 0.3);
+}
+
+.btn-outline-light:disabled {
+    background: #f7fafc;
+    border-color: #e2e8f0;
+    color: #a0aec0;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Professional Reset Button */
+.btn-secondary {
+    background: #718096;
+    border-color: #718096;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background: #4a5568;
+    border-color: #4a5568;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(113, 128, 150, 0.3);
+}
+
+/* Professional Text Colors */
+.text-gold {
+    color: #d69e2e !important;
+    font-weight: 700;
+}
+
+.text-white-50 {
+    color: #718096 !important;
+}
+
+.text-warning {
+    color: #d69e2e !important;
+}
+
+/* Professional Badge Info */
+.bg-opacity-10.bg-info {
+    background: rgba(49, 130, 206, 0.1) !important;
+    color: #2c5282 !important;
+    border: 1px solid rgba(49, 130, 206, 0.3);
+    font-weight: 500;
+}
+
+/* Professional Modal Footer */
+.premium-modal .modal-footer {
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Professional Form Select */
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%234a5568' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px 12px;
+}
+
+/* Professional Loading Spinner */
+.spinner-border.text-primary {
+    border-color: #3182ce;
+    border-right-color: transparent;
+}

@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const { normalizeWoreda } = require('../utils/woredaUtils');
 
 const reportSchema = new mongoose.Schema({
   serviceId: {
@@ -47,6 +48,30 @@ const reportSchema = new mongoose.Schema({
     maxlength: 100,
     sparse: true,
   },
+  evidenceType: [String],
+  sourceWoreda: String,
+  priceVariant: String,
+  price: Number,
+  payment: Number,
+  remoteId: {
+    type: mongoose.Schema.Types.ObjectId,
+    sparse: true,
+  },
+  count: {
+    type: Number,
+    default: 1,
+  },
 }, { timestamps: true });
+
+// Normalize woreda strings before saving
+reportSchema.pre('save', function(next) {
+  if (this.woreda) {
+    this.woreda = normalizeWoreda(this.woreda);
+  }
+  if (this.sourceWoreda) {
+    this.sourceWoreda = normalizeWoreda(this.sourceWoreda);
+  }
+  next();
+});
 
 module.exports = mongoose.model('Report', reportSchema);

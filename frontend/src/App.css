@@ -21,6 +21,60 @@ nav button {
   cursor: pointer;
 }
 
+/* UI Utility Classes */
+.bg-theme-gradient {
+  background: var(--theme-gradient);
+}
+
+.text-gold {
+  color: var(--rich-gold) !important;
+}
+
+.text-soft-gold {
+  color: var(--soft-gold) !important;
+}
+
+.card-premium {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  color: white;
+}
+
+.btn-premium-gold {
+  background-color: var(--rich-gold);
+  color: white;
+  border: none;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-premium-gold:hover {
+  background-color: var(--dark-gold);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+.contrast-input {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid var(--ocean-blue) !important;
+  color: white !important;
+}
+
+.contrast-input:focus {
+  border-color: var(--rich-gold) !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 215, 0, 0.25) !important;
+}
+
+.label-high-contrast {
+  color: var(--soft-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
 form {
   display: flex;
   flex-direction: column;

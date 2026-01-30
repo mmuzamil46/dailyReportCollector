@@ -1,4 +1,5 @@
-const  mongoose = require ("mongoose");
+const mongoose = require("mongoose");
+const { normalizeWoreda } = require('../utils/woredaUtils');
 
 const { Schema } = mongoose;
 
@@ -54,9 +55,12 @@ const userSchema = new Schema(
   }
 );
 
-
-
+userSchema.pre('save', function(next) {
+  if (this.woreda) {
+    this.woreda = normalizeWoreda(this.woreda);
+  }
+  next();
+});
 
 
 module.exports = mongoose.model("User", userSchema);
-

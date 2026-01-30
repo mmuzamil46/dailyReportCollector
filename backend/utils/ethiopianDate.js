@@ -16,9 +16,10 @@ const toEthiopianDate = (gregorianDate) => {
     const newYearDay = isGregorianLeapYear ? 12 : 11;
     
     // Calculate Ethiopian year
+    // Ethiopian year starts on Sept 11/12, so dates before that are in the previous Ethiopian year
     let ethYear = gregYear - 7;
     if (gregMonth < 9 || (gregMonth === 9 && gregDay < newYearDay)) {
-      ethYear++;
+      ethYear--; // Before Ethiopian New Year, so subtract 1
     }
 
     return ethYear;

@@ -74,6 +74,12 @@ function Navbar() {
                     <li className="nav-item">
                       <NavLink className="nav-link" to="/cards">ሰርተፍኬት ካርድ</NavLink>
                     </li>
+                    <li className="nav-item">
+                      <NavLink className="nav-link" to="/atlas-sync">Atlas Sync</NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink className="nav-link" to="/remote-report">ወቅታዊ ሪፖርት</NavLink>
+                    </li>
                   </>
                 )}
 
@@ -93,6 +99,9 @@ function Navbar() {
                     </li>
                     <li className="nav-item">
                       <NavLink className="nav-link" to="/users">Manage Users</NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink className="nav-link" to="/remote-officers/new">Create Remote User</NavLink>
                     </li>
                   </>
                 )}
