@@ -928,6 +928,9 @@ const getDailyServiceProgress = async (req, res) => {
       date: { $gte: today, $lt: tomorrow }
     }).populate('serviceId');
 
+    const budgetYear = getCurrentEthiopianYear().toString();
+    const woredaPlanDoc = await Plan.findOne({ woreda, budgetYear }).lean();
+
     const allServices = await Service.find({ isActive: true });
     
     const progress = {
@@ -944,7 +947,24 @@ const getDailyServiceProgress = async (req, res) => {
       if (woreda !== '15' && service.isSubcityOnly) return;
       
       const actual = reports.filter(r => r.serviceId._id.toString() === service._id.toString()).length;
-      const dailyGoal = service.yearlyPlan ? Math.ceil(service.yearlyPlan / 300) : 5; // Fallback goal
+      
+      // Calculate dailyGoal: Sum plans for ALL categories of this service in Woreda Plan, fallback to global
+      let yearlyTarget = 0;
+      if (woredaPlanDoc && woredaPlanDoc.services) {
+        const totalWoredaPlan = woredaPlanDoc.services
+          .filter(s => s.serviceId.toString() === service._id.toString())
+          .reduce((sum, s) => sum + (s.plan || 0), 0);
+        
+        if (totalWoredaPlan > 0) {
+          yearlyTarget = totalWoredaPlan;
+        } else {
+          yearlyTarget = service.yearlyPlan || 0;
+        }
+      } else {
+        yearlyTarget = service.yearlyPlan || 0;
+      }
+
+      const dailyGoal = yearlyTarget > 0 ? Math.ceil(yearlyTarget / 300) : 5; // Always round UP, fallback to 5
       const percentage = Math.min(Math.round((actual / dailyGoal) * 100), 100);
 
       progress.services.push({
@@ -1000,6 +1020,9 @@ const getPublicDailyProgress = async (req, res) => {
     let totalPercentage = 0;
     let count = 0;
 
+    const budgetYear = getCurrentEthiopianYear().toString();
+    const woredaPlanDoc = woreda !== '15' ? await Plan.findOne({ woreda, budgetYear }).lean() : null;
+
     allServices.forEach(service => {
       // Logic for filtering services:
       // If a specific woreda is requested (not '15'), skip subcity-only services.
@@ -1007,7 +1030,24 @@ const getPublicDailyProgress = async (req, res) => {
       if (woreda !== '15' && service.isSubcityOnly) return;
       
       const actual = reports.filter(r => r.serviceId._id.toString() === service._id.toString()).length;
-      const dailyGoal = service.yearlyPlan ? Math.ceil(service.yearlyPlan / 300) : 5; // Fallback goal
+      
+      // Calculate dailyGoal: Sum plans for ALL categories of this service in Woreda Plan, fallback to global
+      let yearlyTarget = 0;
+      if (woredaPlanDoc && woredaPlanDoc.services) {
+        const totalWoredaPlan = woredaPlanDoc.services
+          .filter(s => s.serviceId.toString() === service._id.toString())
+          .reduce((sum, s) => sum + (s.plan || 0), 0);
+        
+        if (totalWoredaPlan > 0) {
+          yearlyTarget = totalWoredaPlan;
+        } else {
+          yearlyTarget = service.yearlyPlan || 0;
+        }
+      } else {
+        yearlyTarget = service.yearlyPlan || 0;
+      }
+
+      const dailyGoal = yearlyTarget > 0 ? Math.ceil(yearlyTarget / 300) : 5; // Always round UP, fallback to 5
       const percentage = Math.min(Math.round((actual / dailyGoal) * 100), 100);
 
       progress.services.push({
